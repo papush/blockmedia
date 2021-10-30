@@ -1,0 +1,50 @@
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  display: none;
+  width: auto;
+  height: auto;
+  margin: 15px;
+  background: none;
+  color: #525252;
+  font-family: 'Share Tech', sans-serif;
+  font-size: 110%;
+
+}
+
+#div2 {-webkit-animation-timing-function: ease;}
+#div2 {animation-timing-function: ease;}
+#div2 {margin:0px;padding: 0px;}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {left: 300px;}
+  to {left: 0px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+  from {left: 300px;}
+  to {left:0px;}
+}
+
+div {
+  position: relative;
+  -webkit-animation: mymove 0.5s ; /* Safari 4.0 - 8.0 */
+  animation: mymove 0.5s ;
+}
+
+.hide {
+  display: none;
+  width: 100%;
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+  width: 100%;
+
+}

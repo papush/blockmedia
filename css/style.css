@@ -1,0 +1,186 @@
+
+body {
+  font-family: sans-serif;
+  font-family: monospace;
+  font-family: 'Share Tech Mono', monospace;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  display: inline-block;
+  position:fixed;
+  text-align:center;
+  float: left;
+  background-color: white;
+  width: 20%;
+  height: auto;
+}
+
+main{
+  height: 1000px;
+  display: inline-block;
+  width: 80%;
+  float: right;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #E3E3E3;
+}
+
+section{
+  padding: 5px;
+  margin:5px;
+  max-width: 600px;
+  background-color:;
+  border-radius: 5px;
+}
+
+footer {
+  display:block;
+  background-color: #2C3539;
+  color: lightgray;
+  padding: 50px;
+  bottom: 0px;
+  position:static;
+  text-align: center;
+}
+
+nav ul{
+  background:;
+  text-align: right;
+  overflow: hidden;
+  color: white;
+  padding: 4px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+
+nav ul li {
+  display: block;
+  color: lightslategrey;
+  outline: 0 !important;
+  font-family: 'share tech mono':monospace;
+  font-size: 135%;
+  border: solid 1px lightslategrey;
+  border-radius: 7px;
+  letter-spacing: 3px;
+  padding: 5px;
+  padding-left: 9px;
+  padding-bottom: 7px;
+  margin-bottom: 9px;
+  margin: 9px;
+  cursor: pointer;
+}
+
+nav ul li:hover{
+  border:1px solid black;
+  color:black;
+  background-color: #ebebeb;
+}
+
+nav ul li.active{
+  border:1px solid black;
+  color:black;
+}
+
+h1 {
+  color: darkslategrey;
+}
+
+button.nav {
+  background-color: transparent;
+  font-family: share tech mono;
+  letter-spacing: 3px;
+  font-size: 90%;
+  color: lightslategrey;
+  font-weight:;
+  border: 0px;
+}
+
+button.nav:hover {
+  color: white;
+  background-color: darkslategrey;
+}
+
+button.nav.active {
+
+}
+
+
+.hide {
+  display: none;
+}
+
+.mobi {
+  display: none;
+}
+
+.desk {
+  display: contents;
+}
+
+
+div.logo{
+max-width: 280px;
+}
+
+
+hr {
+  color:gray;
+}
+
+p {
+  font-family: 'Share Tech', sans-serif;
+  font-family: 'Share Tech Mono', monospace;
+}
+img.block{
+  display: block;
+  width:100%;
+  max-height:250px;
+  height: auto;
+  object-fit: cover;
+
+}
+
+img.logo {
+  max-width: 100%;
+}
+
+@media screen and (max-width:400px) {
+
+  .mobi{
+    display:inherit;
+  }
+
+  .desk{
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    display: block;
+    height:auto;
+    position: relative;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+
+nav ul li {
+  display: inline-block;
+  margin:0px;
+
+  padding: 5px;
+  padding-left: 9px;
+  padding-bottom: 7px;
+  margin-bottom: 9px;
+}
+
+
+
+}
