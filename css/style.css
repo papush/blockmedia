@@ -147,7 +147,7 @@ img.logo {
   max-width: 100%;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:650px) {
 
   .mobi{
     display:inherit;
