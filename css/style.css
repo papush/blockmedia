@@ -156,7 +156,7 @@ img.logo {
   max-width: 100%;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:700px) {
 
   .mobi{
     display:inherit;
@@ -179,12 +179,6 @@ img.logo {
     height: auto;
   }
 
-nav ul {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
-}
 
 nav ul li {
   display: inline-block;
