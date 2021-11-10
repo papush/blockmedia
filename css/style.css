@@ -1,5 +1,6 @@
 
 body {
+
   font-family: sans-serif;
   font-family: monospace;
   font-family: 'Share Tech Mono', monospace;
@@ -18,7 +19,7 @@ header {
 }
 
 main{
-  height: 1000px;
+  height: auto;
   display: inline-block;
   width: 80%;
   float: right;
@@ -71,6 +72,11 @@ nav ul li {
   margin-bottom: 9px;
   margin: 9px;
   cursor: pointer;
+}
+
+a.nav {
+    color: lightslategrey;
+    text-decoration: none;
 }
 
 nav ul li:hover{
@@ -140,14 +146,17 @@ img.block{
   max-height:250px;
   height: auto;
   object-fit: cover;
+}
 
+img.full{
+  width: 100%;
 }
 
 img.logo {
   max-width: 100%;
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:400px) {
 
   .mobi{
     display:inherit;
@@ -170,17 +179,20 @@ img.logo {
     height: auto;
   }
 
+nav ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
 
 nav ul li {
   display: inline-block;
   margin:0px;
-  width:25%;
+  width: 25%;
   padding: 5px;
   padding-left: 9px;
   padding-bottom: 7px;
   margin-bottom: 9px;
 }
-
-
-
 }
