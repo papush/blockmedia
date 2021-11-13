@@ -3,7 +3,7 @@ body {
 
   font-family: sans-serif;
   font-family: monospace;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Roboto', sans-serif;
   padding: 0px;
   margin: 0px;
 }
@@ -31,7 +31,9 @@ main{
 section{
   padding: 5px;
   margin:5px;
-  max-width: 600px;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 100%;
   background-color:;
   border-radius: 5px;
 }
@@ -56,16 +58,19 @@ nav ul{
   margin-bottom: 5px;
 }
 
+nav, nav ul {
+  margin-top: 0px;
+}
 
 nav ul li {
   display: block;
   color: lightslategrey;
   outline: 0 !important;
-  font-family: 'share tech mono':monospace;
-  font-size: 135%;
+  font-family: 'roboto': sans-serif;
+  font-size: 105%;
   border: solid 1px lightslategrey;
   border-radius: 7px;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
   padding: 5px;
   padding-left: 9px;
   padding-bottom: 7px;
@@ -94,9 +99,45 @@ h1 {
   color: darkslategrey;
 }
 
+button.btn1 {
+  background-color: #37B63E;
+  font-family: 'roboto', sans-serif;
+  padding: 20px;
+  font-size: 200%;
+  color:white;
+  border:none;
+  margin: 15px;
+  width: 75%;
+  border-radius: 15px;
+}
+
+#article {
+  background-color: black;
+  font-size: 150%;
+  width: 100%;
+  padding:7px;
+}
+
+#form{
+  width: 100%;
+}
+
+#article:hover {
+  background-color: #1F1F1F;
+
+}
+#freeconsultation{
+  position: static;
+  bottom: 0px;
+}
+
+button.btn1:hover {
+background-color: #4BC952;
+}
+
 button.nav {
   background-color: transparent;
-  font-family: share tech mono;
+  font-family: 'roboto', sans-serif;
   letter-spacing: 3px;
   font-size: 90%;
   color: lightslategrey;
@@ -109,9 +150,6 @@ button.nav:hover {
   background-color: darkslategrey;
 }
 
-button.nav.active {
-
-}
 
 
 .hide {
@@ -123,22 +161,80 @@ button.nav.active {
 }
 
 .desk {
-  display: contents;
+  display:inline-block;
+}
+
+#desk, #desk2{
+  display: block;
+}
+
+#mobi, #mobi2{
+  display: none;
+}
+
+#rights{
+  position:fixed;
+  bottom: 0px;
+  left:25px;
+  color: gray;
+  font-size: 70%;
 }
 
 
 div.logo{
 max-width: 280px;
+margin-bottom: 0px;
+padding-bottom: 0px;
 }
 
+
+div.paquetes{
+  background-color: white;
+  background-color: #E3E3E3;
+  border-radius: 5px;
+  height: 400px;
+  padding:10px;
+  margin-bottom: 20px;
+}
+div.package {
+  display: inline-block;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 10px;
+  height:100%;
+  width: 230px;
+
+}
+
+div.topnav{
+  height:50px;
+  background-color: lightgray;
+  color:black;
+  text-align: right;
+  padding:5px;
+  padding-right: 25px;
+  display: none;
+}
+
+#mlm{
+  max-width: 80px;
+}
+
+div.MLM{
+  font-size: 80%;
+  bottom: 0px;
+  right: 5px;
+  position: fixed;
+}
 
 hr {
   color:gray;
 }
 
 p {
-  font-family: 'Share Tech', sans-serif;
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'roboto', sans-serif;
 }
 img.block{
   display: block;
@@ -147,6 +243,14 @@ img.block{
   height: auto;
   object-fit: cover;
 }
+
+img.bloke{
+  display: block;
+  width:100%;
+  height: auto;
+  object-fit: cover;
+}
+
 
 img.full{
   width: 100%;
@@ -158,11 +262,38 @@ img.logo {
 
 @media screen and (max-width:700px) {
 
+div.logo {
+max-width: 200px;
+}
+
+button.btn1{
+  font-size:160%;
+}
+
+div.MLM {
+  color:transparent;
+}
+  #mlm{
+    max-width: 70px;
+  }
+
   .mobi{
-    display:inherit;
+    display:inline-block;
   }
 
   .desk{
+    display: none;
+  }
+
+  #desk, #desk2{
+    display: none;
+  }
+
+  #mobi, #mobi2{
+    display: block;
+  }
+
+  div.topnav{
     display: none;
   }
 
@@ -180,13 +311,18 @@ img.logo {
   }
 
 
+
 nav ul li {
-  display: inline-block;
-  margin:0px;
-  width: 25%;
-  padding: 5px;
-  padding-left: 9px;
-  padding-bottom: 7px;
-  margin-bottom: 9px;
+
 }
+
+section{
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+
+
+
+
 }
