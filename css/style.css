@@ -271,10 +271,14 @@ button.btn1{
 }
 
 div.MLM {
-  color:transparent;
+  display: block;
+  text-align: center;
+  position:static;
+  margin-top: 30px;
+  bottom:0px;
 }
   #mlm{
-    max-width: 70px;
+    max-width: 120px;
   }
 
   .mobi{
